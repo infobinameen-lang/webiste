@@ -230,19 +230,29 @@ export default function HomePage() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircleIcon className="h-5 w-5 text-primary" />
-                  <span>TRCN Certified Curriculum</span>
+                  <span>Ethics in Education</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircleIcon className="h-5 w-5 text-primary" />
-                  <span>Practical Teaching Methodologies</span>
+                  <span>Educational Malpractice</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircleIcon className="h-5 w-5 text-primary" />
-                  <span>Continuous Professional Development</span>
+                  <span>Professional Growth & License</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircleIcon className="h-5 w-5 text-primary" />
-                  <span>Certificate of Completion</span>
+                  <span>Modern Teaching Methods</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircleIcon className="h-5 w-5 text-primary" />
+                  <span>Classroom Management
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircleIcon className="h-5 w-5 text-primary" />
+                  <span>Technology Integration
+                  </span>
                 </div>
               </div>
 
