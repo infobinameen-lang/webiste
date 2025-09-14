@@ -59,7 +59,7 @@ export default function ServicesPage() {
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <GraduationCap className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Education Consulting</CardTitle>
+                <CardTitle className="text-2xl">Educational Consulting</CardTitle>
                 <CardDescription className="text-base">
                   Transforming educational institutions through evidence-based strategies and professional development
                 </CardDescription>
@@ -116,7 +116,7 @@ export default function ServicesPage() {
                 <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
                   <BookOpen className="h-8 w-8 text-secondary" />
                 </div>
-                <CardTitle className="text-2xl">Research Services</CardTitle>
+                <CardTitle className="text-2xl">Teacher Training</CardTitle>
                 <CardDescription className="text-base">
                   Evidence-based research solutions that inform policy and drive educational innovation
                 </CardDescription>
