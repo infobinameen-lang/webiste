@@ -66,8 +66,7 @@ Leveraging technology to make education smarter and more accessible.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 What sets us apart is our holistic approach,  we don’t just train, we transform. Our solutions go beyond one-off workshops or consultations. We build systems, mindsets, and sustainable models that keep creating impact long after we’re gone.
-
-At Bin-ameen Consulting, we are driven by results, guided by values, and committed to leaving every client, student, and partner better than we found them.
+                At Bin-ameen Consulting, we are driven by results, guided by values, and committed to leaving every client, student, and partner better than we found them.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact">
