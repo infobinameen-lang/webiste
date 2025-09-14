@@ -176,7 +176,8 @@ At Think Twice – College of Entrepreneurship, we instill resilience, responsib
                   className="w-16 h-16 mx-auto mb-4"
                 />
                 <CardTitle>Stand & Speak – Own the Stage</CardTitle>
-                <CardDescription>Stand & Speak – Own the Stage trains young professionals to overcome the fear of public speaking and build confidence on stage. The programme equips participants with proven strategies to manage stage anxiety, develop fluency, and deliver engaging presentations. Whether addressing a small group or a large audience, you will learn how to communicate clearly, connect with listeners, and project authority. Our goal is to transform hesitant speakers into confident presenters who can truly own the stage.
+                <CardDescription>Stand & Speak – Own the Stage trains young professionals to overcome the fear of public speaking and build confidence on stage. 
+                  The programme equips participants with proven strategies to manage stage anxiety, develop fluency, and deliver engaging presentations. 
 Hold that Mic & Say your Piece!.</CardDescription>
               </CardHeader>
               <CardContent>
