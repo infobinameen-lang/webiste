@@ -21,7 +21,7 @@ export default function PortfolioPage() {
               Proven Success Stories &<span className="text-primary"> Measurable Impact</span>
             </h1>
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-              discover how we've transformed educational institutions and businesses across Nigeria through our
+              Discover how we've transformed educational institutions and businesses across Nigeria through our
               comprehensive consulting services and professional development programmes.
             </p>
           </div>
