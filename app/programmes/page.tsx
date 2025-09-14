@@ -152,10 +152,7 @@ export default function ProgrammesPage() {
                 <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
                 <CardDescription>Think Twice – College of Entrepreneurship
 
-Think Twice – College of Entrepreneurship is designed for both secondary school leavers and university graduates. For secondary school leavers, the programme stresses that while a college degree is valuable, it is not the only path to success. With the right mindset, skills, and entrepreneurial drive, you can build a meaningful future regardless of your current educational status.
-
-For university graduates, the programme emphasizes that education is not only about earning a job. It is about becoming a problem solver, a forward thinker, and a contributor to society. Through our curriculum, participants gain entrepreneurship education that equips them to recognize opportunities, take action, grow sustainable ventures, and leverage their education for a better life—even in the absence of traditional employment.
-
+Think Twice – College of Entrepreneurship is designed for both secondary school leavers and university graduates. For secondary school leavers, the programme stresses that while a college degree is valuable, it is not the only path to success. 
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
