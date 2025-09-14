@@ -150,7 +150,15 @@ export default function ProgrammesPage() {
                   className="w-16 h-16 mx-auto mb-4"
                 />
                 <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
-                <CardDescription>Empowering entrepreneurial minds for the future.</CardDescription>
+                <CardDescription>Think Twice – College of Entrepreneurship
+
+Think Twice – College of Entrepreneurship is designed for both secondary school leavers and university graduates. For secondary school leavers, the programme stresses that while a college degree is valuable, it is not the only path to success. With the right mindset, skills, and entrepreneurial drive, you can build a meaningful future regardless of your current educational status.
+
+For university graduates, the programme emphasizes that education is not only about earning a job. It is about becoming a problem solver, a forward thinker, and a contributor to society. Through our curriculum, participants gain entrepreneurship education that equips them to recognize opportunities, take action, grow sustainable ventures, and leverage their education for a better life—even in the absence of traditional employment.
+
+We highlight the examples of successful entrepreneurs who thrived without a college degree, such as Aliko Dangote and Richard Branson, and those who used their formal education as a springboard for innovation, such as Ngozi Okonjo-Iweala and Bill Gates. The message is clear: success requires both knowledge and mindset. If you can earn both, you create the strongest foundation for lasting impact.
+
+At Think Twice – College of Entrepreneurship, we instill resilience, responsibility, and critical thinking so participants are not only prepared to create businesses but also to shape a better future.</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
