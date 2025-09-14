@@ -118,7 +118,7 @@ export default function ServicesPage() {
                 </div>
                 <CardTitle className="text-2xl">Teacher Training</CardTitle>
                 <CardDescription className="text-base">
-                  Evidence-based research solutions that inform policy and drive educational innovation
+                Helping schools, NGOs, and education agencies improve systems and outcomes.
                 </CardDescription>
               </CardHeader>
               <CardContent>
