@@ -171,7 +171,7 @@ At Think Twice – College of Entrepreneurship, we instill resilience, responsib
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <img
-                  src="/logos/stand-speak-logo.png"
+                  src="/public/1.png"
                   alt="Stand & Speak Logo"
                   className="w-16 h-16 mx-auto mb-4"
                 />
