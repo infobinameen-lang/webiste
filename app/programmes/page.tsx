@@ -145,7 +145,7 @@ export default function ProgrammesPage() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <img
-                  src="/logos/think-twice-logo.png"
+                  src="/2.png"
                   alt="Think Twice Logo"
                   className="w-16 h-16 mx-auto mb-4"
                 />
