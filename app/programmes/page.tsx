@@ -127,12 +127,14 @@ export default function ProgrammesPage() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <img
-                  src="/logos/ethication-logo.png"
+                  src="/4.png"
                   alt="Ethication Logo"
                   className="w-16 h-16 mx-auto mb-4"
                 />
                 <CardTitle>Ethication – Teacher Training Programme</CardTitle>
-                <CardDescription>Revolutionizing teaching practices with ethical principles.</CardDescription>
+                <CardDescription>Ethication is Bin-Ameen Consulting’s flagship teacher training programme designed to raise the standard of teaching in Nigeria. 
+                  The programme equips educators with ethical competence, modern teaching strategies, classroom management skills, and digital literacy to meet today’s learning demands.
+</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
