@@ -149,11 +149,13 @@ export default function ProgrammesPage() {
                   alt="Think Twice Logo"
                   className="w-16 h-16 mx-auto mb-4"
                 />
-                <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
-                <CardDescription>Think Twice – College of Entrepreneurship
+  <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
+  <CardDescription>
+    Think Twice – College of Entrepreneurship
 
-Think Twice – College of Entrepreneurship is designed for both secondary school leavers and university graduates. For secondary school leavers, the programme stresses that while a college degree is valuable, it is not the only path to success. 
-              </CardHeader>
+    Think Twice – College of Entrepreneurship is designed for both secondary school leavers and university graduates. For secondary school leavers, the programme stresses that while a college degree is valuable, it is not the only path to success.
+  </CardDescription>
+</CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
                   <Link href="/contact">Learn More</Link>
