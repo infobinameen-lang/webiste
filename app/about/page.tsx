@@ -47,19 +47,27 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                BIN-AMEEN CONSULTING was founded with a simple yet powerful vision: to transform the educational
-                landscape and business environment in Nigeria through expert consulting and professional development.
+                Bin-Ameen Consulting was founded with a simple but powerful idea: education can transform lives, businesses, and entire communities, if done right.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                What started as a passion for educational excellence has grown into a comprehensive consulting firm that
-                serves schools, universities, businesses, and government institutions across Nigeria. Our TRCN
-                registration and proven track record speak to our commitment to professional standards and measurable
-                results.
+                Born from a passion for teaching, research, and entrepreneurship, we exist to bridge the gap between what schools and professionals currently have, and what they truly need to thrive in a fast-changing world.
+
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Today, we are proud to have trained over 5,000 teachers, partnered with 50+ educational institutions,
-                and helped countless businesses achieve their strategic objectives through our evidence-based consulting
-                approach.
+                We believe in:
+
+Empowering educators to inspire the next generation.
+
+Guiding researchers to turn ideas into impactful outcomes.
+
+Supporting entrepreneurs to start, grow, and scale their ventures.
+
+Leveraging technology to make education smarter and more accessible.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                What sets us apart is our holistic approach,  we don’t just train, we transform. Our solutions go beyond one-off workshops or consultations. We build systems, mindsets, and sustainable models that keep creating impact long after we’re gone.
+
+At Bin-ameen Consulting, we are driven by results, guided by values, and committed to leaving every client, student, and partner better than we found them.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact">
