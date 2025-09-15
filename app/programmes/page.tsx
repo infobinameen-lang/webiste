@@ -195,7 +195,7 @@ Hold that Mic & Say your Piece!.</CardDescription>
                 />
                 <CardTitle>Research Lab – From Proposal to Publication</CardTitle>
                 <CardDescription>Research Lab is designed to instill strong research skills in young researchers, university graduates, and anyone interested in academic inquiry. The programme covers the full research journey, from proposal writing to journal publication. 
-                Participants learn research design, data handling, journal identification and conformity, and practical steps for publishing in high-impact outlets.</CardDescription>
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
