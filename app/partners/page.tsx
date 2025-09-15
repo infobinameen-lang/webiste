@@ -1,7 +1,11 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "@/components/navigation";
+import { Navigation as SwiperNavigation } from "swiper/modules";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import {
@@ -40,41 +44,51 @@ export default function PartnersPage() {
         </div>
       </section>
 
-     {/* Partnership Statistics */}
-<section className="py-20">
-  <div className="container mx-auto px-4">
-    <div className="grid md:grid-cols-4 gap-8 text-center">
-      <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/trcn.png" alt="TRCN" className="w-20 h-20" />
+    {/* Partnership Statistics */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <Swiper
+            modules={[SwiperNavigation]}
+            navigation
+            spaceBetween={50}
+            slidesPerView={1}
+            className="w-full"
+          >
+            <SwiperSlide>
+              <div className="text-center">
+                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
+                </div>
+                <div className="text-3xl font-bold text-primary mb-2">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="text-center">
+                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
+                </div>
+                <div className="text-3xl font-bold text-primary mb-2">AL-BIRR MULTIMEDIA</div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="text-center">
+                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <img src="/mm.jpg" alt="HAMUNA COURIER AND LOGISTIC SERVICES" className="w-full h-full object-contain" />
+                </div>
+                <div className="text-3xl font-bold text-primary mb-2">HAMUNA COURIER AND LOGISTIC SERVICES</div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="text-center">
+                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <img src="/kano.jpg" alt="KANO STATE MINISTRY OF EDUCATION" className="w-full h-full object-contain" />
+                </div>
+                <div className="text-3xl font-bold text-primary mb-2">KANO STATE MINISTRY OF EDUCATION</div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
-      </div>
-      <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-12 h-12" />
-        </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">AL-BIRR MULTIMEDIA</div>
-      </div>
-      <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/mm.jpg" alt="States Covered" className="w-20 h-20" />
-        </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">HAMUNA COURIER AND LOGISTIC SERVICES</div>
-      </div>
-      <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/kano.jpg" alt="Years Partnership" className="w-20 h-20" />
-        </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">KANO STATE MINISTRY OF EDUCATION</div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Partner Categories */}
       <section className="py-20 bg-muted/50">
