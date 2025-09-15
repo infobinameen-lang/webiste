@@ -48,7 +48,6 @@ export default function PartnersPage() {
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
           <img src="/TRCN.jpg" alt="TRCN" className="w-20 h-20" />
         </div>
-        <div className="text-3xl font-bold text-primary mb-2">TRCN</div>
         <div className="text-muted-foreground">Teachers Registration Council of Nigeria</div>
       </div>
       <div>
@@ -62,8 +61,7 @@ export default function PartnersPage() {
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
           <img src="/path-to-your-image/globe-icon.png" alt="States Covered" className="w-12 h-12" />
         </div>
-        <div className="text-3xl font-bold text-accent mb-2">6</div>
-        <div className="text-muted-foreground">States Covered</div>
+        <div className="text-muted-foreground">HAMUNA COURIER AND LOGISTIC SERVICES</div>
       </div>
       <div>
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
