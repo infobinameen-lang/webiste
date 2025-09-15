@@ -40,41 +40,41 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Partnership Statistics */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-muted-foreground">Educational Institutions</div>
-            </div>
-            <div>
-              <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-secondary" />
-              </div>
-              <div className="text-3xl font-bold text-secondary mb-2">15+</div>
-              <div className="text-muted-foreground">Government Agencies</div>
-            </div>
-            <div>
-              <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="h-8 w-8 text-accent" />
-              </div>
-              <div className="text-3xl font-bold text-accent mb-2">6</div>
-              <div className="text-muted-foreground">States Covered</div>
-            </div>
-            <div>
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-primary mb-2">10+</div>
-              <div className="text-muted-foreground">Years Partnership</div>
-            </div>
-          </div>
+     {/* Partnership Statistics */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/TCRN.png" alt="Educational Institutions" className="w-12 h-12" />
         </div>
-      </section>
+        <div className="text-3xl font-bold text-primary mb-2">TCRN</div>
+        <div className="text-muted-foreground">Teachers Registration Council of Nigeria</div>
+      </div>
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/path-to-your-image/users-icon.png" alt="Government Agencies" className="w-12 h-12" />
+        </div>
+        <div className="text-3xl font-bold text-secondary mb-2">15+</div>
+        <div className="text-muted-foreground">Government Agencies</div>
+      </div>
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/path-to-your-image/globe-icon.png" alt="States Covered" className="w-12 h-12" />
+        </div>
+        <div className="text-3xl font-bold text-accent mb-2">6</div>
+        <div className="text-muted-foreground">States Covered</div>
+      </div>
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/path-to-your-image/award-icon.png" alt="Years Partnership" className="w-12 h-12" />
+        </div>
+        <div className="text-3xl font-bold text-primary mb-2">10+</div>
+        <div className="text-muted-foreground">Years Partnership</div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Partner Categories */}
       <section className="py-20 bg-muted/50">
