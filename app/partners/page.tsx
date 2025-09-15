@@ -46,7 +46,7 @@ export default function PartnersPage() {
     <div className="grid md:grid-cols-4 gap-8 text-center">
       <div>
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/jpg.png" alt="TCRN" className="w-12 h-12" />
+          <img src="/jpg.png" alt="TCRN" className="w-20 h-20" />
         </div>
         <div className="text-3xl font-bold text-primary mb-2">TCRN</div>
         <div className="text-muted-foreground">Teachers Registration Council of Nigeria</div>
