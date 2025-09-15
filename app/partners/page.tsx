@@ -46,17 +46,17 @@ export default function PartnersPage() {
     <div className="grid md:grid-cols-4 gap-8 text-center">
       <div>
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/TCRN.png" alt="Educational Institutions" className="w-12 h-12" />
+          <img src="/jpg.png" alt="TCRN" className="w-12 h-12" />
         </div>
         <div className="text-3xl font-bold text-primary mb-2">TCRN</div>
         <div className="text-muted-foreground">Teachers Registration Council of Nigeria</div>
       </div>
       <div>
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/path-to-your-image/users-icon.png" alt="Government Agencies" className="w-12 h-12" />
+          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-12 h-12" />
         </div>
         <div className="text-3xl font-bold text-secondary mb-2">15+</div>
-        <div className="text-muted-foreground">Government Agencies</div>
+        <div className="text-muted-foreground">AL-BIRR MULTIMEDIA</div>
       </div>
       <div>
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
