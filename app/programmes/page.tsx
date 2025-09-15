@@ -189,7 +189,7 @@ Hold that Mic & Say your Piece!.</CardDescription>
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <img
-                  src="/logos/3.png"
+                  src="/4.png"
                   alt="Research Lab Logo"
                   className="w-16 h-16 mx-auto mb-4"
                 />
