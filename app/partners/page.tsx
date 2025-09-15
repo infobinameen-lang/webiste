@@ -54,7 +54,6 @@ export default function PartnersPage() {
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
           <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-12 h-12" />
         </div>
-        <div className="text-3xl font-bold text-secondary mb-2">15+</div>
         <div className="text-muted-foreground">AL-BIRR MULTIMEDIA</div>
       </div>
       <div>
@@ -65,9 +64,8 @@ export default function PartnersPage() {
       </div>
       <div>
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/path-to-your-image/award-icon.png" alt="Years Partnership" className="w-12 h-12" />
+          <img src="/kano.jpg" alt="Years Partnership" className="w-12 h-12" />
         </div>
-        <div className="text-3xl font-bold text-primary mb-2">10+</div>
         <div className="text-muted-foreground">Years Partnership</div>
       </div>
     </div>
