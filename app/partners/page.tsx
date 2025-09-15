@@ -66,6 +66,7 @@ export default function PartnersPage() {
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
           <img src="/kano.jpg" alt="Years Partnership" className="w-12 h-12" />
         </div>
+        <div className="text-3xl font-bold text-primary mb-2"></div>
         <div className="text-muted-foreground">Years Partnership</div>
       </div>
     </div>
