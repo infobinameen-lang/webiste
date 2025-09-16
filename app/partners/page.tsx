@@ -55,36 +55,32 @@ export default function PartnersPage() {
   <div className="container mx-auto px-4">
     <div className="grid md:grid-cols-4 gap-8 text-center">
       <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/trcn.png" alt="TRCN" className="w-20 h-20" />
+        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
         </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
+        <div className="text-2xl font-semibold text-primary mb-2">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
       </div>
       <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-12 h-12" />
+        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
         </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">AL-BIRR MULTIMEDIA</div>
+        <div className="text-2xl font-semibold text-primary mb-2">AL-BIRR MULTIMEDIA</div>
       </div>
       <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/mm.jpg" alt="States Covered" className="w-20 h-20" />
+        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/mm.jpg" alt="States Covered" className="w-full h-full object-contain" />
         </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">HAMUNA COURIER AND LOGISTIC SERVICES</div>
+        <div className="text-2xl font-semibold text-primary mb-2">HAMUNA COURIER AND LOGISTIC SERVICES</div>
       </div>
       <div>
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/kano.jpg" alt="Years Partnership" className="w-20 h-20" />
+        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/kano.jpg" alt="Years Partnership" className="w-full h-full object-contain" />
         </div>
-        <div className="text-3xl font-bold text-primary mb-2"></div>
-        <div className="text-muted-foreground">KANO STATE MINISTRY OF EDUCATION</div>
+        <div className="text-2xl font-semibold text-primary mb-2">KANO STATE MINISTRY OF EDUCATION</div>
       </div>
     </div>
   </div>
-</section> 
+</section>
       {/* Partnership Benefits */}
       <section className="py-20">
         <div className="container mx-auto px-4">
