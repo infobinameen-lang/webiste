@@ -1,6 +1,6 @@
-import dynamic from "next/dynamic";
-import "swiper/css";
-import "swiper/css/navigation";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { WhatsAppFloat } from "@/components/whatsapp-float";
@@ -17,11 +17,17 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-// Dynamically import Swiper components
-const Swiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), { ssr: false });
-const SwiperSlide = dynamic(() => import("swiper/react").then((mod) => mod.SwiperSlide), { ssr: false });
-
 export default function PartnersPage() {
+  // React Slick settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -43,52 +49,42 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Partnership Statistics */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <Swiper
-            modules={[Navigation]}
-            navigation
-            spaceBetween={50}
-            slidesPerView={1}
-            className="w-full"
-          >
-            <SwiperSlide>
-              <div className="text-center">
-                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
-                </div>
-                <div className="text-3xl font-bold text-primary mb-2">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="text-center">
-                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
-                </div>
-                <div className="text-3xl font-bold text-primary mb-2">AL-BIRR MULTIMEDIA</div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="text-center">
-                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <img src="/mm.jpg" alt="HAMUNA COURIER AND LOGISTIC SERVICES" className="w-full h-full object-contain" />
-                </div>
-                <div className="text-3xl font-bold text-primary mb-2">HAMUNA COURIER AND LOGISTIC SERVICES</div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="text-center">
-                <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <img src="/kano.jpg" alt="KANO STATE MINISTRY OF EDUCATION" className="w-full h-full object-contain" />
-                </div>
-                <div className="text-3xl font-bold text-primary mb-2">KANO STATE MINISTRY OF EDUCATION</div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+      
+     {/* Partnership Statistics */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/trcn.png" alt="TRCN" className="w-20 h-20" />
         </div>
-      </section>
-
+        <div className="text-3xl font-bold text-primary mb-2"></div>
+        <div className="text-muted-foreground">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
+      </div>
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-12 h-12" />
+        </div>
+        <div className="text-3xl font-bold text-primary mb-2"></div>
+        <div className="text-muted-foreground">AL-BIRR MULTIMEDIA</div>
+      </div>
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/mm.jpg" alt="States Covered" className="w-20 h-20" />
+        </div>
+        <div className="text-3xl font-bold text-primary mb-2"></div>
+        <div className="text-muted-foreground">HAMUNA COURIER AND LOGISTIC SERVICES</div>
+      </div>
+      <div>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img src="/kano.jpg" alt="Years Partnership" className="w-20 h-20" />
+        </div>
+        <div className="text-3xl font-bold text-primary mb-2"></div>
+        <div className="text-muted-foreground">KANO STATE MINISTRY OF EDUCATION</div>
+      </div>
+    </div>
+  </div>
+</section> 
       {/* Partnership Benefits */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -168,52 +164,6 @@ export default function PartnersPage() {
                 <h3 className="font-semibold text-lg mb-2">Long-term Support</h3>
                 <p className="text-muted-foreground">
                   Ongoing partnership support to ensure sustained success and continuous development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How to Partner */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">How to Partner With Us</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Simple steps to begin a transformative partnership
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">1</span>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Initial Consultation</h3>
-                <p className="text-muted-foreground text-sm">
-                  Schedule a meeting to discuss your organization's needs, goals, and potential collaboration areas.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-secondary">2</span>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Partnership Design</h3>
-                <p className="text-muted-foreground text-sm">
-                  Collaborate to design a partnership framework that aligns with both organizations' objectives.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-accent">3</span>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">Implementation</h3>
-                <p className="text-muted-foreground text-sm">
-                  Begin collaborative activities with clear timelines, deliverables, and success metrics.
                 </p>
               </div>
             </div>
