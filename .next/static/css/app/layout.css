@@ -1074,6 +1074,12 @@
   .scroll-py-1 {
     scroll-padding-block: calc(var(--spacing) * 1);
   }
+  .list-inside {
+    list-style-position: inside;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
   .list-none {
     list-style-type: none;
   }
@@ -1432,6 +1438,12 @@
   }
   .bg-muted {
     background-color: var(--muted);
+  }
+  .bg-muted\/10 {
+    background-color: var(--muted);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--muted) 10%, transparent);
+    }
   }
   .bg-muted\/50 {
     background-color: var(--muted);

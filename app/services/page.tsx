@@ -302,60 +302,87 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+{/* Teacher Training Service */}
+<section className="py-20 bg-muted/10">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl lg:text-4xl font-bold mb-4">Teacher Training Service</h2>
+      <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+        At Bin-ameen Consulting, we believe that teachers are the cornerstone of educational transformation. Our Teacher Training Programme is designed to equip educators with the knowledge, skills, and mindset required to thrive in 21st-century classrooms.
+      </p>
+    </div>
 
-      {/* Service Process */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Proven Process</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              A systematic approach that ensures successful outcomes for every project
-            </p>
-          </div>
+    {/* Programme Overview */}
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold mb-4">Programme Overview</h3>
+      <p className="text-muted-foreground text-lg leading-relaxed">
+        This is a comprehensive, practice-oriented programme focused on pedagogy, educational technology, and professional development. It empowers teachers to create engaging classrooms, inspire learners, and deliver measurable results.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">1. Assessment</h3>
-              <p className="text-muted-foreground text-sm">
-                Comprehensive analysis of your current situation, challenges, and objectives
-              </p>
-            </div>
+    {/* Programme Structure */}
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold mb-4">Programme Structure</h3>
+      <ul className="list-disc list-inside text-muted-foreground text-lg leading-relaxed">
+        <li>Pre-Training Needs Assessment – We identify the unique challenges of your teachers and school before the training.</li>
+        <li>Interactive Workshops & Seminars – Hands-on sessions with practical strategies and real classroom scenarios.</li>
+        <li>Micro-Teaching Sessions – Participants practice and receive constructive feedback to refine their teaching methods.</li>
+        <li>Educational Technology Demonstrations – Practical exposure to tools and platforms for digital learning.</li>
+        <li>Post-Training Evaluation & Support – Measuring impact and providing continued mentorship for sustainable results.</li>
+      </ul>
+    </div>
 
-            <div className="text-center">
-              <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="h-8 w-8 text-secondary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">2. Strategy</h3>
-              <p className="text-muted-foreground text-sm">
-                Development of customized solutions based on best practices and research
-              </p>
-            </div>
+    {/* Curriculum Highlights */}
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold mb-4">Curriculum Highlights</h3>
+      <ul className="list-disc list-inside text-muted-foreground text-lg leading-relaxed">
+        <li>Effective Lesson Planning & Delivery</li>
+        <li>Classroom Management & Student Engagement</li>
+        <li>Assessment & Evaluation Techniques</li>
+        <li>21st-Century Skills Integration (Critical Thinking, Collaboration, Creativity)</li>
+        <li>Inclusive Education & Differentiated Instruction</li>
+        <li>Educational Technology & Digital Literacy</li>
+        <li>Professional Ethics & Teacher Motivation</li>
+        <li>Leadership Skills for Teachers</li>
+      </ul>
+    </div>
 
-            <div className="text-center">
-              <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">3. Implementation</h3>
-              <p className="text-muted-foreground text-sm">
-                Collaborative execution with your team, ensuring smooth transition and adoption
-              </p>
-            </div>
+    {/* Key Benefits */}
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold mb-4">Key Benefits</h3>
+      <ul className="list-disc list-inside text-muted-foreground text-lg leading-relaxed">
+        <li>Improved teacher confidence and competence.</li>
+        <li>Practical tools for managing and engaging students.</li>
+        <li>Integration of technology to enhance teaching outcomes.</li>
+        <li>Increased student performance and school reputation.</li>
+        <li>Certification of participation to motivate and recognize teachers.</li>
+      </ul>
+    </div>
 
-            <div className="text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">4. Evaluation</h3>
-              <p className="text-muted-foreground text-sm">
-                Continuous monitoring and optimization to ensure sustained success
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Who Can Attend */}
+    <div className="mb-12">
+      <h3 className="text-2xl font-semibold mb-4">Who Can Attend</h3>
+      <ul className="list-disc list-inside text-muted-foreground text-lg leading-relaxed">
+        <li>Primary & Secondary School Teachers</li>
+        <li>School Administrators & Heads of Department</li>
+        <li>Prospective Teachers & NYSC Members in Education</li>
+        <li>Education Officers from Ministries, NGOs, and Agencies</li>
+      </ul>
+    </div>
+
+    {/* Delivery Options */}
+    <div>
+      <h3 className="text-2xl font-semibold mb-4">Delivery Options</h3>
+      <ul className="list-disc list-inside text-muted-foreground text-lg leading-relaxed">
+        <li>On-Site Training: We come to your school or organization.</li>
+        <li>Centralized Workshops: Open sessions for participants from different schools.</li>
+        <li>Virtual Training: Live online sessions for remote participation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      
 
       {/* Why Choose Our Services */}
       <section className="py-20">
