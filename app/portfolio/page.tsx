@@ -1,11 +1,15 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
-import { GraduationCap, Building2, Users, TrendingUp, Award, ArrowRight, BookOpen, Target } from "lucide-react"
-import Link from "next/link"
+// import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
+import { GraduationCap, Building2, Users, TrendingUp, Award, ArrowRight, BookOpen, Target } from "lucide-react";
+import Link from "next/link";
 
 export default function PortfolioPage() {
   return (
@@ -13,7 +17,7 @@ export default function PortfolioPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20">
+      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Our Portfolio</Badge>
@@ -29,7 +33,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Impact Statistics */}
-      <section className="py-20">
+      <section className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
@@ -65,7 +69,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Featured Case Studies */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 bg-muted/50" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Featured Case Studies</h2>
@@ -76,7 +80,7 @@ export default function PortfolioPage() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Case Study 1 */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up">
               <CardHeader>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="bg-primary/10 p-2 rounded-full">
@@ -131,7 +135,7 @@ export default function PortfolioPage() {
             </Card>
 
             {/* Case Study 2 */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
               <CardHeader>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="bg-secondary/10 p-2 rounded-full">
@@ -184,250 +188,12 @@ export default function PortfolioPage() {
                 </Button>
               </CardContent>
             </Card>
-
-            {/* Case Study 3 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-accent/10 p-2 rounded-full">
-                    <BookOpen className="h-6 w-6 text-accent" />
-                  </div>
-                  <Badge variant="secondary">Research Project</Badge>
-                </div>
-                <CardTitle className="text-xl">National Teacher Effectiveness Study</CardTitle>
-                <CardDescription>
-                  Comprehensive research project informing national education policy recommendations
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <h4 className="font-semibold mb-2">Project Scope</h4>
-                    <p className="text-sm text-muted-foreground">
-                      18-month nationwide study examining teacher effectiveness factors across 200 schools in 6 states.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Methodology</h4>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Mixed-methods research approach</li>
-                      <li>• Statistical analysis of performance data</li>
-                      <li>• Qualitative interviews and observations</li>
-                      <li>• Policy analysis and recommendations</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Impact</h4>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-accent/5 p-3 rounded-lg text-center">
-                        <div className="text-lg font-bold text-accent">200</div>
-                        <div className="text-xs text-muted-foreground">Schools Studied</div>
-                      </div>
-                      <div className="bg-primary/5 p-3 rounded-lg text-center">
-                        <div className="text-lg font-bold text-primary">15</div>
-                        <div className="text-xs text-muted-foreground">Policy Changes</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <Link href="/contact">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Case Study 4 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-primary/10 p-2 rounded-full">
-                    <Target className="h-6 w-6 text-primary" />
-                  </div>
-                  <Badge variant="outline">Training Programme</Badge>
-                </div>
-                <CardTitle className="text-xl">Multi-State Ethication Implementation</CardTitle>
-                <CardDescription>
-                  Large-scale teacher training programme across 5 states reaching 1,500 educators
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <h4 className="font-semibold mb-2">Programme Details</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Coordinated implementation of Ethication programme across Lagos, Ogun, Oyo, Osun, and Ondo states.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Implementation</h4>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• 30 training cohorts over 12 months</li>
-                      <li>• Local facilitator training and certification</li>
-                      <li>• Customized materials for regional contexts</li>
-                      <li>• Ongoing support and mentorship</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Outcomes</h4>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-primary/5 p-3 rounded-lg text-center">
-                        <div className="text-lg font-bold text-primary">1,500</div>
-                        <div className="text-xs text-muted-foreground">Teachers Certified</div>
-                      </div>
-                      <div className="bg-secondary/5 p-3 rounded-lg text-center">
-                        <div className="text-lg font-bold text-secondary">98%</div>
-                        <div className="text-xs text-muted-foreground">Completion Rate</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <Link href="/contact">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Client Testimonials */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Testimonials from satisfied partners and clients
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card>
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="flex text-yellow-400 mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Award key={i} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground italic">
-                    "The Ethication programme transformed our teaching approach. Our students are more engaged, and our
-                    teachers feel more confident and effective."
-                  </p>
-                </div>
-                <div>
-                  <div className="font-semibold">Dr. Adebayo Ogundimu</div>
-                  <div className="text-sm text-muted-foreground">Principal, Crown Heights Secondary School</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="flex text-yellow-400 mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Award key={i} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground italic">
-                    "BIN-AMEEN's business consulting helped us streamline operations and reduce costs by 45%. Their
-                    expertise is unmatched."
-                  </p>
-                </div>
-                <div>
-                  <div className="font-semibold">Prof. Kemi Adeleke</div>
-                  <div className="text-sm text-muted-foreground">Vice-Chancellor, Heritage University</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="flex text-yellow-400 mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Award key={i} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground italic">
-                    "The research quality and insights provided by BIN-AMEEN informed our state education policy. Their
-                    work has lasting impact."
-                  </p>
-                </div>
-                <div>
-                  <div className="font-semibold">Hon. Folake Osibodu</div>
-                  <div className="text-sm text-muted-foreground">Commissioner for Education, Lagos State</div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Sectors We Serve */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Sectors We Serve</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Our expertise spans across various educational and business sectors
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <GraduationCap className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-semibold mb-2">Primary & Secondary Schools</h3>
-                <p className="text-sm text-muted-foreground">
-                  Public and private schools seeking educational excellence
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="bg-secondary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Building2 className="h-6 w-6 text-secondary" />
-                </div>
-                <h3 className="font-semibold mb-2">Universities & Colleges</h3>
-                <p className="text-sm text-muted-foreground">Higher education institutions and research centers</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="bg-accent/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-6 w-6 text-accent" />
-                </div>
-                <h3 className="font-semibold mb-2">Government Agencies</h3>
-                <p className="text-sm text-muted-foreground">Education ministries and policy-making bodies</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-semibold mb-2">Corporate Training</h3>
-                <p className="text-sm text-muted-foreground">Businesses seeking professional development solutions</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Join Our Success Stories?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-pretty">
@@ -455,5 +221,5 @@ export default function PortfolioPage() {
       <Footer />
       <WhatsAppFloat />
     </div>
-  )
+  );
 }

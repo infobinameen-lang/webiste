@@ -1,9 +1,13 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+// import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 import {
   GraduationCap,
   Clock,
@@ -16,16 +20,18 @@ import {
   ArrowRight,
   Calendar,
   MapPin,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
 
 export default function ProgrammesPage() {
+  // AOS initialization removed for Server Component compatibility
+
   return (
     <div className="min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20">
+      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Professional Development</Badge>
@@ -42,7 +48,7 @@ export default function ProgrammesPage() {
       </section>
 
       {/* Ethication Programme - Featured */}
-      <section className="py-20">
+      <section className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
@@ -113,7 +119,7 @@ export default function ProgrammesPage() {
       </section>
 
       {/* Other Programmes */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 bg-muted/50" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Professional Development Programmes</h2>
@@ -124,7 +130,7 @@ export default function ProgrammesPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Ethication Programme */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up">
               <CardHeader>
                 <img
                   src="/4.png"
@@ -132,9 +138,12 @@ export default function ProgrammesPage() {
                   className="w-16 h-16 mx-auto mb-4"
                 />
                 <CardTitle>Ethication – Teacher Training Programme</CardTitle>
-                <CardDescription>Ethication is Bin-Ameen Consulting’s flagship teacher training programme designed to raise the standard of teaching in Nigeria. 
-                  The programme equips educators with ethical competence, modern teaching strategies, classroom management skills, and digital literacy to meet today’s learning demands.
-</CardDescription>
+                <CardDescription>
+                  Ethication is Bin-Ameen Consulting’s flagship teacher training programme designed to raise the
+                  standard of teaching in Nigeria. The programme equips educators with ethical competence, modern
+                  teaching strategies, classroom management skills, and digital literacy to meet today’s learning
+                  demands.
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
@@ -144,20 +153,20 @@ export default function ProgrammesPage() {
             </Card>
 
             {/* Think Twice Programme */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
               <CardHeader>
                 <img
                   src="/2.png"
                   alt="Think Twice Logo"
                   className="w-16 h-16 mx-auto mb-4"
                 />
-  <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
-  <CardDescription>
-    Think Twice – College of Entrepreneurship
-
-    Think Twice – College of Entrepreneurship is designed for both secondary school leavers and university graduates. For secondary school leavers, the programme stresses that while a college degree is valuable, it is not the only path to success.
-  </CardDescription>
-</CardHeader>
+                <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
+                <CardDescription>
+                  Think Twice – College of Entrepreneurship is designed for both secondary school leavers and
+                  university graduates. For secondary school leavers, the programme stresses that while a college
+                  degree is valuable, it is not the only path to success.
+                </CardDescription>
+              </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
                   <Link href="/contact">Learn More</Link>
@@ -166,7 +175,7 @@ export default function ProgrammesPage() {
             </Card>
 
             {/* Stand & Speak Programme */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
               <CardHeader>
                 <img
                   src="/1.png"
@@ -174,9 +183,11 @@ export default function ProgrammesPage() {
                   className="w-16 h-16 mx-auto mb-4"
                 />
                 <CardTitle>Stand & Speak – Own the Stage</CardTitle>
-                <CardDescription>Stand & Speak – Own the Stage trains young professionals to overcome the fear of public speaking and build confidence on stage. 
-                  The programme equips participants with proven strategies to manage stage anxiety, develop fluency, and deliver engaging presentations. 
-Hold that Mic & Say your Piece!.</CardDescription>
+                <CardDescription>
+                  Stand & Speak – Own the Stage trains young professionals to overcome the fear of public speaking and
+                  build confidence on stage. The programme equips participants with proven strategies to manage stage
+                  anxiety, develop fluency, and deliver engaging presentations. Hold that Mic & Say your Piece!
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
@@ -186,7 +197,7 @@ Hold that Mic & Say your Piece!.</CardDescription>
             </Card>
 
             {/* Research Lab Programme */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
               <CardHeader>
                 <img
                   src="/3.png"
@@ -194,7 +205,10 @@ Hold that Mic & Say your Piece!.</CardDescription>
                   className="w-16 h-16 mx-auto mb-4"
                 />
                 <CardTitle>Research Lab – From Proposal to Publication</CardTitle>
-                <CardDescription>Research Lab is designed to instill strong research skills in young researchers, university graduates, and anyone interested in academic inquiry. The programme covers the full research journey, from proposal writing to journal publication. 
+                <CardDescription>
+                  Research Lab is designed to instill strong research skills in young researchers, university graduates,
+                  and anyone interested in academic inquiry. The programme covers the full research journey, from
+                  proposal writing to journal publication.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -208,7 +222,7 @@ Hold that Mic & Say your Piece!.</CardDescription>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Teaching Career?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-pretty">
@@ -236,5 +250,5 @@ Hold that Mic & Say your Piece!.</CardDescription>
       <Footer />
       <WhatsAppFloat />
     </div>
-  )
+  );
 }

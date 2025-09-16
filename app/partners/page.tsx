@@ -1,3 +1,8 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,12 +33,19 @@ export default function PartnersPage() {
     arrows: true,
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20">
+      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Our Partners</Badge>
@@ -49,40 +61,40 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      
-     {/* Partnership Statistics */}
-<section className="py-20">
-  <div className="container mx-auto px-4">
-    <div className="grid md:grid-cols-4 gap-8 text-center">
-      <div>
-        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
+      {/* Partnership Statistics */}
+      <section className="py-20" data-aos="fade-up">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
+              </div>
+              <div className="text-2xl font-semibold text-primary mb-2">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
+            </div>
+            <div>
+              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
+              </div>
+              <div className="text-2xl font-semibold text-primary mb-2">AL-BIRR MULTIMEDIA</div>
+            </div>
+            <div>
+              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="/mm.jpg" alt="States Covered" className="w-full h-full object-contain" />
+              </div>
+              <div className="text-2xl font-semibold text-primary mb-2">HAMUNA COURIER AND LOGISTIC SERVICES</div>
+            </div>
+            <div>
+              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="/kano.jpg" alt="Years Partnership" className="w-full h-full object-contain" />
+              </div>
+              <div className="text-2xl font-semibold text-primary mb-2">KANO STATE MINISTRY OF EDUCATION</div>
+            </div>
+          </div>
         </div>
-        <div className="text-2xl font-semibold text-primary mb-2">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
-      </div>
-      <div>
-        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
-        </div>
-        <div className="text-2xl font-semibold text-primary mb-2">AL-BIRR MULTIMEDIA</div>
-      </div>
-      <div>
-        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/mm.jpg" alt="States Covered" className="w-full h-full object-contain" />
-        </div>
-        <div className="text-2xl font-semibold text-primary mb-2">HAMUNA COURIER AND LOGISTIC SERVICES</div>
-      </div>
-      <div>
-        <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img src="/kano.jpg" alt="Years Partnership" className="w-full h-full object-contain" />
-        </div>
-        <div className="text-2xl font-semibold text-primary mb-2">KANO STATE MINISTRY OF EDUCATION</div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
+
       {/* Partnership Benefits */}
-      <section className="py-20">
+      <section className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Partnership Benefits</h2>
@@ -92,7 +104,7 @@ export default function PartnersPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Target className="h-6 w-6 text-primary" />
               </div>
@@ -104,7 +116,7 @@ export default function PartnersPage() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Users className="h-6 w-6 text-primary" />
               </div>
@@ -116,7 +128,7 @@ export default function PartnersPage() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <TrendingUp className="h-6 w-6 text-primary" />
               </div>
@@ -128,7 +140,7 @@ export default function PartnersPage() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Award className="h-6 w-6 text-primary" />
               </div>
@@ -140,7 +152,7 @@ export default function PartnersPage() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="400">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Globe className="h-6 w-6 text-primary" />
               </div>
@@ -152,7 +164,7 @@ export default function PartnersPage() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="500">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Handshake className="h-6 w-6 text-primary" />
               </div>
@@ -168,7 +180,7 @@ export default function PartnersPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Partner With Us?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-pretty">

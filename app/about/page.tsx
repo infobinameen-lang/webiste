@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+// Removed useEffect and AOS imports because this is a Server Component
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 import {
   Users,
   Target,
@@ -15,16 +17,16 @@ import {
   ArrowRight,
   Eye,
   Lightbulb,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
 
 export default function AboutPage() {
+  // Removed useEffect and AOS initialization because this is a Server Component
+
   return (
     <div className="min-h-screen">
       <Navigation />
-
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20">
+      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">About BIN-AMEEN CONSULTING</Badge>
@@ -39,68 +41,77 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      {/* CEO Section */}
-<section className="py-20">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-col items-center text-center gap-8">
-      {/* CEO Picture */}
-      <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg">
-        <img
-          src="/huz.png"
-          alt="Khuzaifa Aminu, CEO of Bin-ameen Consulting"
-          className="w-full h-full object-cover"
-        />
-      </div>
 
-      {/* About the CEO */}
-      <div className="max-w-2xl">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-          <strong>Khuzaifa Aminu, LPT</strong> <br />
-          (Licensed Professional Teacher, CEO, Bin-ameen Consulting)
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-          Meet Khuzaifa Aminu – a passionate educator, serial entrepreneur, and the driving force behind Bin-ameen Consulting. A certified teacher with the Teachers Registration Council of Nigeria (TRCN). Khuzaifa is on a mission to transform education in Nigeria.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-          He leads initiatives that train teachers, integrate technology into classrooms, and guide schools, NGOs, and government agencies in building stronger education systems.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-          Beyond education, he is the Founder of <strong>Shellify</strong>, an innovative startup turning eggshell waste into valuable products for the food, health, and agricultural sectors.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Through his work, he inspires young people to think differently, embrace innovation, and create opportunities, showing them that education is powerful, but combining it with entrepreneurship is transformational.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      {/* CEO Section */}
+      <section className="py-20" data-aos="fade-up">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center text-center gap-8">
+            <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg">
+              <img
+                src="/huz.png"
+                alt="Khuzaifa Aminu, CEO of Bin-ameen Consulting"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="max-w-2xl">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                <strong>Khuzaifa Aminu, LPT</strong> <br />
+                (Licensed Professional Teacher, CEO, Bin-ameen Consulting)
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Meet Khuzaifa Aminu – a passionate educator, serial entrepreneur, and the driving force behind Bin-ameen
+                Consulting. A certified teacher with the Teachers Registration Council of Nigeria (TRCN). Khuzaifa is on
+                a mission to transform education in Nigeria.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                He leads initiatives that train teachers, integrate technology into classrooms, and guide schools, NGOs,
+                and government agencies in building stronger education systems.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Beyond education, he is the Founder of <strong>Shellify</strong>, an innovative startup turning eggshell
+                waste into valuable products for the food, health, and agricultural sectors.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Through his work, he inspires young people to think differently, embrace innovation, and create
+                opportunities, showing them that education is powerful, but combining it with entrepreneurship is
+                transformational.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Story */}
-      <section className="py-20">
+      <section className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Bin-Ameen Consulting was founded with a simple but powerful idea: education can transform lives, businesses, and entire communities, if done right.
+                Bin-Ameen Consulting was founded with a simple but powerful idea: education can transform lives,
+                businesses, and entire communities, if done right.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Born from a passion for teaching, research, and entrepreneurship, we exist to bridge the gap between what schools and professionals currently have, and what they truly need to thrive in a fast-changing world.
-
+                Born from a passion for teaching, research, and entrepreneurship, we exist to bridge the gap between
+                what schools and professionals currently have, and what they truly need to thrive in a fast-changing
+                world.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 We believe in:
-
-Empowering educators to inspire the next generation.
-
-Guiding researchers to turn ideas into impactful outcomes.
-
-Supporting entrepreneurs to start, grow, and scale their ventures.
-
-Leveraging technology to make education smarter and more accessible.
+                <br />
+                Empowering educators to inspire the next generation.
+                <br />
+                Guiding researchers to turn ideas into impactful outcomes.
+                <br />
+                Supporting entrepreneurs to start, grow, and scale their ventures.
+                <br />
+                Leveraging technology to make education smarter and more accessible.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                What sets us apart is our holistic approach,  we don’t just train, we transform. Our solutions go beyond one-off workshops or consultations. We build systems, mindsets, and sustainable models that keep creating impact long after we’re gone.
-                At Bin-ameen Consulting, we are driven by results, guided by values, and committed to leaving every client, student, and partner better than we found them.
+                What sets us apart is our holistic approach, we don’t just train, we transform. Our solutions go beyond
+                one-off workshops or consultations. We build systems, mindsets, and sustainable models that keep
+                creating impact long after we’re gone. At Bin-ameen Consulting, we are driven by results, guided by
+                values, and committed to leaving every client, student, and partner better than we found them.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact">
@@ -121,7 +132,7 @@ Leveraging technology to make education smarter and more accessible.
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 bg-muted/50" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Foundation</h2>
@@ -131,7 +142,7 @@ Leveraging technology to make education smarter and more accessible.
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center">
+            <Card className="text-center" data-aos="fade-up">
               <CardHeader>
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-primary" />
@@ -146,7 +157,7 @@ Leveraging technology to make education smarter and more accessible.
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center" data-aos="fade-up" data-aos-delay="100">
               <CardHeader>
                 <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Eye className="h-8 w-8 text-secondary" />
@@ -161,7 +172,7 @@ Leveraging technology to make education smarter and more accessible.
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center" data-aos="fade-up" data-aos-delay="200">
               <CardHeader>
                 <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-accent" />
@@ -180,7 +191,7 @@ Leveraging technology to make education smarter and more accessible.
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20">
+      <section className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why Choose BIN-AMEEN CONSULTING</h2>
@@ -190,7 +201,7 @@ Leveraging technology to make education smarter and more accessible.
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Award className="h-6 w-6 text-primary" />
               </div>
@@ -203,7 +214,7 @@ Leveraging technology to make education smarter and more accessible.
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Users className="h-6 w-6 text-primary" />
               </div>
@@ -216,7 +227,7 @@ Leveraging technology to make education smarter and more accessible.
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <BookOpen className="h-6 w-6 text-primary" />
               </div>
@@ -229,7 +240,7 @@ Leveraging technology to make education smarter and more accessible.
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <Lightbulb className="h-6 w-6 text-primary" />
               </div>
@@ -242,7 +253,7 @@ Leveraging technology to make education smarter and more accessible.
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="400">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <TrendingUp className="h-6 w-6 text-primary" />
               </div>
@@ -255,7 +266,7 @@ Leveraging technology to make education smarter and more accessible.
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="500">
               <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
                 <CheckCircle className="h-6 w-6 text-primary" />
               </div>
@@ -272,7 +283,7 @@ Leveraging technology to make education smarter and more accessible.
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Experience the BIN-AMEEN Difference?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-pretty">
@@ -300,5 +311,7 @@ Leveraging technology to make education smarter and more accessible.
       <Footer />
       <WhatsAppFloat />
     </div>
-  )
+  );
 }
+
+// useEffect is not needed in this Server Component, so this function is removed.
