@@ -433,16 +433,7 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  {/* Branch Office */}
-                  <div>
-                    <h4 className="font-semibold mb-2">Branch Office - Lagos</h4>
-                    <div className="space-y-1 text-sm text-muted-foreground">
-                      <p>123 Education Avenue, Victoria Island</p>
-                      <p>Lagos State, Nigeria</p>
-                      <p>Phone: +234 703 036 3774</p>
-                      <p>Email: info.binameen@gmail.com</p>
-                    </div>
-                  </div>
+                  
                 </CardContent>
               </Card>
 

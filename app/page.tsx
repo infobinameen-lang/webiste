@@ -73,70 +73,54 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
-                TRCN Registered • Professional Excellence
-              </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold text-balance mb-6">
-                Transforming Education & Business Through
-                <span className="text-primary"> Expert Consulting</span>
-              </h1>
-              <p className="text-xl text-muted-foreground text-pretty mb-8 leading-relaxed">
-                BIN-AMEEN CONSULTING delivers world-class education, research, and business solutions. Our flagship
-                Ethication programme has trained thousands of teachers across Nigeria.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="default" asChild>
-                  <Link href="/programmes">
-                    Explore Our Programmes
-                    <ArrowRightIcon className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link href="/contact">Get Free Consultation</Link>
-                </Button>
-              </div>
+  <div
+    className="container mx-auto px-4 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/training-session-presentation.jpg')" }}
+  >
+    <div className="grid lg:grid-cols-2 gap-12 items-center bg-black/50 p-8 rounded-lg">
+      <div>
+        <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+          TRCN Registered • Professional Excellence
+        </Badge>
+        <h1 className="text-4xl lg:text-6xl font-bold text-balance mb-6 text-white">
+          Transforming Education & Business Through
+          <span className="text-primary"> Expert Consulting</span>
+        </h1>
+        <p className="text-xl text-white text-pretty mb-8 leading-relaxed">
+          BIN-AMEEN CONSULTING delivers world-class education, research, and business solutions. Our flagship
+          Ethication programme has trained thousands of teachers across Nigeria.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button size="lg" variant="default" asChild>
+            <Link href="/programmes">
+              Explore Our Programmes
+              <ArrowRightIcon className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="lg" asChild>
+            <Link href="/contact">Get Free Consultation</Link>
+          </Button>
+        </div>
 
-              {/* Trust Indicators */}
-              <div className="flex items-center gap-6 mt-8 pt-8 border-t border-border">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">5000+</div>
-                  <div className="text-sm text-muted-foreground">Teachers Trained</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-muted-foreground">Schools Partnered</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">10+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <img
-                src="/training-session-presentation.jpg"
-                alt="Professional teacher training session at BIN-AMEEN CONSULTING"
-                className="rounded-lg shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-lg p-4 shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="bg-primary/10 p-2 rounded-full">
-                    <AwardIcon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">TRCN Certified</div>
-                    <div className="text-sm text-muted-foreground">Official Recognition</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* Trust Indicators */}
+        <div className="flex items-center gap-6 mt-8 pt-8 border-t border-border text-white">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-white">5000+</div>
+            <div className="text-sm text-white">Teachers Trained</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-white">50+</div>
+            <div className="text-sm text-white">Schools Partnered</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-white">10+</div>
+            <div className="text-sm text-white">Years Experience</div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Services Overview */}
       <section className="py-20">
