@@ -54,13 +54,12 @@ export default function AboutPage() {
 
       {/* About the CEO */}
       <div className="max-w-2xl">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-4">About the CEO</h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
           <strong>Khuzaifa Aminu, LPT</strong> <br />
           (Licensed Professional Teacher, CEO, Bin-ameen Consulting)
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-          Meet Khuzaifa Aminu – a passionate educator, serial entrepreneur, and the driving force behind Bin-ameen Consulting. A certified teacher with the Teachers Registration Council of Nigeria (TRCN) and a graduate of Computer Science and Education, Khuzaifa is on a mission to transform education in Nigeria.
+          Meet Khuzaifa Aminu – a passionate educator, serial entrepreneur, and the driving force behind Bin-ameen Consulting. A certified teacher with the Teachers Registration Council of Nigeria (TRCN). Khuzaifa is on a mission to transform education in Nigeria.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-6">
           He leads initiatives that train teachers, integrate technology into classrooms, and guide schools, NGOs, and government agencies in building stronger education systems.
