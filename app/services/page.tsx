@@ -1,9 +1,14 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 import {
   GraduationCap,
   Building2,
@@ -17,16 +22,23 @@ import {
   Lightbulb,
   Award,
   BarChart3,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
 
 export default function ServicesPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20">
+      <section className="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Our Services</Badge>
@@ -43,7 +55,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Core Services */}
-      <section className="py-20">
+      <section className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Core Services</h2>
@@ -54,7 +66,7 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Education Consulting */}
-            <Card className="group hover:shadow-lg transition-all duration-300">
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up">
               <CardHeader>
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <GraduationCap className="h-8 w-8 text-primary" />
@@ -62,7 +74,6 @@ export default function ServicesPage() {
                 <CardTitle className="text-2xl">Educational Consulting</CardTitle>
                 <CardDescription className="text-base">
                   Helping schools, NGOs, and education agencies improve systems and outcomes.
- and professional development
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -73,7 +84,6 @@ export default function ServicesPage() {
                       <div className="font-medium">Teacher Recruitment</div>
                       <div className="text-sm text-muted-foreground">
                         Sourcing, screening, and onboarding top teaching talent.
-
                       </div>
                     </div>
                   </div>
@@ -83,8 +93,6 @@ export default function ServicesPage() {
                       <div className="font-medium">Certificate Translation</div>
                       <div className="text-sm text-muted-foreground">
                         Professional translation and verification for international use.
-
-
                       </div>
                     </div>
                   </div>
@@ -93,16 +101,16 @@ export default function ServicesPage() {
                     <div>
                       <div className="font-medium">Educational Technology Integration</div>
                       <div className="text-sm text-muted-foreground">
-                        helping schools adopt and implement smart boards, LMS, and other EdTech solutions.
+                        Helping schools adopt and implement smart boards, LMS, and other EdTech solutions.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Educational Analysis </div>
+                      <div className="font-medium">Educational Analysis</div>
                       <div className="text-sm text-muted-foreground">
-                        school needs assessments, curriculum evaluation, and data-driven recommendations.
+                        School needs assessments, curriculum evaluation, and data-driven recommendations.
                       </div>
                     </div>
                   </div>
@@ -110,431 +118,55 @@ export default function ServicesPage() {
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-medium">International Admission Processing</div>
-                      <div className="text-sm text-muted-foreground">guiding students through applications, documentation, and visa preparation.
-                    </div>
+                      <div className="text-sm text-muted-foreground">
+                        Guiding students through applications, documentation, and visa preparation.
+                      </div>
                     </div>
                   </div>
                 </div>
-                
               </CardContent>
             </Card>
-{/* Research Consulting Services */}
-<Card className="group hover:shadow-lg transition-all duration-300">
-  <CardHeader>
-    <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-      <BookOpen className="h-8 w-8 text-secondary" />
-    </div>
-    <CardTitle className="text-2xl">Research Consulting Services</CardTitle>
-    <CardDescription className="text-base">
-      Supporting impactful research from proposal development to publication.
-    </CardDescription>
-  </CardHeader>
-  <CardContent>
-    <div className="space-y-4 mb-6">
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Research Proposal Development Support</div>
-          <div className="text-sm text-muted-foreground">
-            Assistance in creating compelling research proposals.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Data Collection & Analysis</div>
-          <div className="text-sm text-muted-foreground">
-            Expert guidance on qualitative and quantitative methods.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Thesis & Dissertation Coaching</div>
-          <div className="text-sm text-muted-foreground">
-            Personalized support for academic project completion.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Publication Support</div>
-          <div className="text-sm text-muted-foreground">
-            Guidance on journal selection, manuscript preparation, and submission.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Survey Design & Instrument Validation</div>
-          <div className="text-sm text-muted-foreground">
-            Assistance in creating effective surveys and validating instruments.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Academic Writing Workshops</div>
-          <div className="text-sm text-muted-foreground">
-            Practical workshops to enhance academic writing skills.
-          </div>
-        </div>
-      </div>
-    </div>
-  </CardContent>
-</Card>
 
-{/* Entrepreneurship Education */}
-<Card className="group hover:shadow-lg transition-all duration-300">
-  <CardHeader>
-    <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-      <Building2 className="h-8 w-8 text-accent" />
-    </div>
-    <CardTitle className="text-2xl">Entrepreneurship Education</CardTitle>
-    <CardDescription className="text-base">
-      Building the next generation of innovators and job creators.
-    </CardDescription>
-  </CardHeader>
-  <CardContent>
-    <div className="space-y-4 mb-6">
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Think Twice Programme</div>
-          <div className="text-sm text-muted-foreground">
-            Guiding youth in education vs. entrepreneurship decisions.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Business Plan Development & Review</div>
-          <div className="text-sm text-muted-foreground">
-            Helping entrepreneurs create and refine business plans.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Startup Mentoring & Coaching</div>
-          <div className="text-sm text-muted-foreground">
-            Personalized guidance for launching and scaling startups.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Entrepreneurship Bootcamps & Seminars</div>
-          <div className="text-sm text-muted-foreground">
-            Intensive training sessions to foster entrepreneurial skills.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Innovation & Creative Thinking Workshops</div>
-          <div className="text-sm text-muted-foreground">
-            Encouraging out-of-the-box thinking and problem-solving.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Funding Readiness & Pitch Deck Design</div>
-          <div className="text-sm text-muted-foreground">
-            Preparing entrepreneurs to secure funding and present ideas effectively.
-          </div>
-        </div>
-      </div>
-    </div>
-  </CardContent>
-</Card>
-            {/* Printing & Publishing */}
-<Card className="group hover:shadow-lg transition-all duration-300">
-  <CardHeader>
-    <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-      <BookOpen className="h-8 w-8 text-primary" />
-    </div>
-    <CardTitle className="text-2xl">Printing & Publishing</CardTitle>
-    <CardDescription className="text-base">
-      Professional and academic printing services with quality assurance.
-    </CardDescription>
-  </CardHeader>
-  <CardContent>
-    <div className="space-y-4 mb-6">
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Academic & Research Printing</div>
-          <div className="text-sm text-muted-foreground">
-            Thesis, dissertations, and reports.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Training Manuals & Workbooks</div>
-          <div className="text-sm text-muted-foreground">
-            Custom-designed materials for training sessions.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Certificates & ID Cards</div>
-          <div className="text-sm text-muted-foreground">
-            Professional-grade certificates and identification cards.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Educational Materials Publishing</div>
-          <div className="text-sm text-muted-foreground">
-            Publishing textbooks, guides, and other educational resources.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Flyers, Posters, & Banners</div>
-          <div className="text-sm text-muted-foreground">
-            High-quality promotional materials for events and campaigns.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">eBook & Digital Publishing</div>
-          <div className="text-sm text-muted-foreground">
-            Publishing digital books and resources for online platforms.
-          </div>
-        </div>
-      </div>
-    </div>
-  </CardContent>
-</Card>
-{/* Research Consulting Services */}
-<Card className="group hover:shadow-lg transition-all duration-300">
-  <CardHeader>
-    <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-      <BookOpen className="h-8 w-8 text-secondary" />
-    </div>
-    <CardTitle className="text-2xl">Research Consulting Services</CardTitle>
-    <CardDescription className="text-base">
-      Supporting impactful research from proposal development to publication.
-    </CardDescription>
-  </CardHeader>
-  <CardContent>
-    <div className="space-y-4 mb-6">
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Proposal Development</div>
-          <div className="text-sm text-muted-foreground">
-            Assistance in creating compelling research proposals.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Data Collection & Analysis</div>
-          <div className="text-sm text-muted-foreground">
-            Expert guidance on qualitative and quantitative methods.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Thesis & Dissertation Coaching</div>
-          <div className="text-sm text-muted-foreground">
-            Personalized support for academic project completion.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Publication Support</div>
-          <div className="text-sm text-muted-foreground">
-            Guidance on journal selection, manuscript preparation, and submission.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Survey Design & Validation</div>
-          <div className="text-sm text-muted-foreground">
-            Assistance in creating effective surveys and validating instruments.
-          </div>
-        </div>
-      </div>
-    </div>
-  </CardContent>
-</Card>
-            {/* Public Speaking */}
-<Card className="group hover:shadow-lg transition-all duration-300">
-  <CardHeader>
-    <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-      <Mic className="h-8 w-8 text-primary" />
-    </div>
-    <CardTitle className="text-2xl">Public Speaking</CardTitle>
-    <CardDescription className="text-base">
-      Inspiring and engaging audiences in education, entrepreneurship, and youth empowerment.
-    </CardDescription>
-  </CardHeader>
-  <CardContent>
-    <div className="space-y-4 mb-6">
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Professional MC (Academic & Corporate Events)</div>
-          <div className="text-sm text-muted-foreground">
-            Hosting events with professionalism and charisma.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Keynote Speaking & Panel Appearances</div>
-          <div className="text-sm text-muted-foreground">
-            Delivering impactful speeches and participating in thought-provoking discussions.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Motivational Youth Talks</div>
-          <div className="text-sm text-muted-foreground">
-            Inspiring young minds to achieve their full potential.
-          </div>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-medium">Public Speaking Coaching</div>
-          <div className="text-sm text-muted-foreground">
-            Training individuals to become confident and effective public speakers.
-          </div>
-        </div>
-      </div>
-    </div>
-  </CardContent>
-</Card>
-          </div>
-        </div>
-      </section>
-     
-
-      {/* Why Choose Our Services */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why Choose Our Services</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              The advantages that set our consulting services apart
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex items-start gap-4">
-              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                <Award className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Proven Expertise</h3>
-                <p className="text-muted-foreground">
-                  Over a decade of experience with TRCN certification and 5000+ successful training completions
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                <BarChart3 className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Measurable Results</h3>
-                <p className="text-muted-foreground">
-                  Data-driven approach with clear KPIs and regular progress reporting
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                <Users className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Collaborative Approach</h3>
-                <p className="text-muted-foreground">
-                  We work closely with your team to ensure solutions are practical and sustainable
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                <Target className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Customized Solutions</h3>
-                <p className="text-muted-foreground">
-                  Every solution is tailored to your specific context, challenges, and objectives
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                <TrendingUp className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Ongoing Support</h3>
-                <p className="text-muted-foreground">
-                  Continuous support and follow-up to ensure long-term success and sustainability
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-                <CheckCircle className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Quality Assurance</h3>
-                <p className="text-muted-foreground">
-                  Rigorous quality control processes ensure excellence in every deliverable
-                </p>
-              </div>
-            </div>
+            {/* Add AOS to Other Cards */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+              <CardHeader>
+                <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
+                  <BookOpen className="h-8 w-8 text-secondary" />
+                </div>
+                <CardTitle className="text-2xl">Research Consulting Services</CardTitle>
+                <CardDescription className="text-base">
+                  Supporting impactful research from proposal development to publication.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Research Proposal Development Support</div>
+                      <div className="text-sm text-muted-foreground">
+                        Assistance in creating compelling research proposals.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Data Collection & Analysis</div>
+                      <div className="text-sm text-muted-foreground">
+                        Expert guidance on qualitative and quantitative methods.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Organization?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-pretty">
@@ -562,5 +194,5 @@ export default function ServicesPage() {
       <Footer />
       <WhatsAppFloat />
     </div>
-  )
+  );
 }
