@@ -39,6 +39,45 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      {/* CEO Section */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* About the CEO */}
+      <div>
+        <h2 className="text-3xl lg:text-4xl font-bold mb-4">About the CEO</h2>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+          <strong>Khuzaifa Aminu, LPT</strong> <br />
+          (Licensed Professional Teacher, CEO, Bin-ameen Consulting)
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+          Meet Khuzaifa Aminu – a passionate educator, serial entrepreneur, and the driving force behind Bin-ameen Consulting. A certified teacher with the Teachers Registration Council of Nigeria (TRCN) and a graduate of Computer Science and Education, Khuzaifa is on a mission to transform education in Nigeria.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+          He leads initiatives that train teachers, integrate technology into classrooms, and guide schools, NGOs, and government agencies in building stronger education systems.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+          Beyond education, he is the Founder of <strong>Shellify</strong>, an innovative startup turning eggshell waste into valuable products for the food, health, and agricultural sectors.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+          Khuzaifa’s passion for entrepreneurship is fueled by his learning experiences with global thought leaders such as Jeff Hoffman (Priceline.com Co-founder), Mea Boykins, Mike Radoor, Prof. Hassan Younes, Dustin Plantholt, Dr. Tony Bello, and Dr. Orlando Odejide. He has also been hosted on National Televisions like Arewa 24.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Through his work, he inspires young people to think differently, embrace innovation, and create opportunities, showing them that education is powerful, but combining it with entrepreneurship is transformational.
+        </p>
+      </div>
+
+      {/* CEO Picture */}
+      <div className="flex justify-center">
+        <img
+          src="/huz.png"
+          alt="Khuzaifa Aminu, CEO of Bin-ameen Consulting"
+          className="rounded-lg shadow-lg w-full max-w-sm object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Our Story */}
       <section className="py-20">
