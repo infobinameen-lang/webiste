@@ -186,7 +186,7 @@ export default function ServicesPage() {
                 <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                   <Building2 className="h-8 w-8 text-accent" />
                 </div>
-                <CardTitle className="text-2xl">Entrepreneurship Consulting</CardTitle>
+                <CardTitle className="text-2xl">Entrepreneurship Education</CardTitle>
                 <CardDescription className="text-base">
                   Building the next generation of innovators and job creators.
                 </CardDescription>
