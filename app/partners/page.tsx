@@ -1,26 +1,25 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "@/components/navigation";
-import { Navigation as SwiperNavigation } from "swiper/modules";
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { Footer } from "@/components/footer";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 import {
-  Building2,
-  GraduationCap,
-  Users,
-  Award,
-  CheckCircle,
-  ArrowRight,
-  Handshake,
-  Globe,
   Target,
+  Users,
   TrendingUp,
-} from "lucide-react"
-import Link from "next/link"
+  Award,
+  Globe,
+  Handshake,
+  ArrowRight,
+} from "lucide-react";
+
+// Dynamically import Swiper components
+const Swiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), { ssr: false });
+const SwiperSlide = dynamic(() => import("swiper/react").then((mod) => mod.SwiperSlide), { ssr: false });
 
 export default function PartnersPage() {
   return (
@@ -44,11 +43,11 @@ export default function PartnersPage() {
         </div>
       </section>
 
-    {/* Partnership Statistics */}
+      {/* Partnership Statistics */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <Swiper
-            modules={[SwiperNavigation]}
+            modules={[Navigation]}
             navigation
             spaceBetween={50}
             slidesPerView={1}
@@ -90,7 +89,6 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      
       {/* Partnership Benefits */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -177,7 +175,7 @@ export default function PartnersPage() {
         </div>
       </section>
 
-            {/* How to Partner */}
+      {/* How to Partner */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -252,5 +250,5 @@ export default function PartnersPage() {
       <Footer />
       <WhatsAppFloat />
     </div>
-  )
+  );
 }
