@@ -61,7 +61,8 @@ export default function ServicesPage() {
                 </div>
                 <CardTitle className="text-2xl">Educational Consulting</CardTitle>
                 <CardDescription className="text-base">
-                  Transforming educational institutions through evidence-based strategies and professional development
+                  Helping schools, NGOs, and education agencies improve systems and outcomes.
+ and professional development
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -69,44 +70,52 @@ export default function ServicesPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Teacher Training & Development</div>
+                      <div className="font-medium">Teacher Recruitment</div>
                       <div className="text-sm text-muted-foreground">
-                        TRCN certified programmes including our flagship Ethication
+                        Sourcing, screening, and onboarding top teaching talent.
+
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Curriculum Development</div>
+                      <div className="font-medium">Certificate Translation</div>
                       <div className="text-sm text-muted-foreground">
-                        Custom curriculum design aligned with national standards
+                        Professional translation and verification for international use.
+
+
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Educational Leadership</div>
+                      <div className="font-medium">Educational Technology Integration</div>
                       <div className="text-sm text-muted-foreground">
-                        Leadership development for school administrators
+                        helping schools adopt and implement smart boards, LMS, and other EdTech solutions.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Quality Assurance</div>
-                      <div className="text-sm text-muted-foreground">Educational audits and improvement strategies</div>
+                      <div className="font-medium">Educational Analysis </div>
+                      <div className="text-sm text-muted-foreground">
+                        school needs assessments, curriculum evaluation, and data-driven recommendations.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">International Admission Processing</div>
+                      <div className="text-sm text-muted-foreground">guiding students through applications, documentation, and visa preparation.
+                    </div>
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <Link href="/contact">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                
               </CardContent>
             </Card>
 
@@ -116,56 +125,58 @@ export default function ServicesPage() {
                 <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
                   <BookOpen className="h-8 w-8 text-secondary" />
                 </div>
-                <CardTitle className="text-2xl">Teacher Training</CardTitle>
-                <CardDescription className="text-base">
-                Helping schools, NGOs, and education agencies improve systems and outcomes.
-                </CardDescription>
-              </CardHeader>
+                <CardTitle className="text-2xl">Research Consulting
+                </CardTitle>
+                </CardHeader>
               <CardContent>
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Educational Research</div>
-                      <div className="text-sm text-muted-foreground">
-                        Comprehensive studies on teaching methodologies and outcomes
+                      <div className="font-medium">Research Proposal Development Support
                       </div>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Policy Analysis</div>
-                      <div className="text-sm text-muted-foreground">
-                        Research-backed policy recommendations for institutions
+                      <div className="font-medium">Data Collection & Analysis (Qualitative & Quantitative)
                       </div>
+                      </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Thesis & Dissertation Coaching</div>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Data Analytics</div>
-                      <div className="text-sm text-muted-foreground">
-                        Statistical analysis and performance measurement
+                      <div className="font-medium">Publication Support (Journal Guidance)
                       </div>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Publication Support</div>
-                      <div className="text-sm text-muted-foreground">
-                        Research writing and academic publication assistance
+                      <div className="font-medium">Survey Design & Instrument Validation
+                       (Journal Guidance)
                       </div>
+                      
                     </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Academic Writing Workshops</div>
+                      </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <Link href="/contact">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                
               </CardContent>
             </Card>
 
@@ -175,9 +186,9 @@ export default function ServicesPage() {
                 <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                   <Building2 className="h-8 w-8 text-accent" />
                 </div>
-                <CardTitle className="text-2xl">Business Consulting</CardTitle>
+                <CardTitle className="text-2xl">Entrepreneurship Consulting</CardTitle>
                 <CardDescription className="text-base">
-                  Strategic business solutions that drive growth and operational excellence
+                  Building the next generation of innovators and job creators.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -185,46 +196,46 @@ export default function ServicesPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Strategic Planning</div>
-                      <div className="text-sm text-muted-foreground">
-                        Long-term business strategy development and implementation
+                      <div className="font-medium">Think Twice Programme – guiding youth in education vs. entrepreneurship decisions.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Process Optimization</div>
-                      <div className="text-sm text-muted-foreground">
-                        Operational efficiency and workflow improvement
+                      <div className="font-medium">Business Plan Development & Review
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Change Management</div>
-                      <div className="text-sm text-muted-foreground">
-                        Organizational transformation and culture development
+                      <div className="font-medium">Startup Mentoring & Coaching
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Performance Management</div>
-                      <div className="text-sm text-muted-foreground">
-                        KPI development and performance tracking systems
+                      <div className="font-medium">Entrepreneurship Bootcamps & Seminars
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Innovation & Creative Thinking Workshops
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Funding Readiness & Pitch Deck Design
                       </div>
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <Link href="/contact">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
               </CardContent>
             </Card>
 
@@ -236,7 +247,7 @@ export default function ServicesPage() {
                 </div>
                 <CardTitle className="text-2xl">Public Speaking & Printing</CardTitle>
                 <CardDescription className="text-base">
-                  Professional communication services and high-quality printing solutions
+                  Professional and academic printing services with quality assurance.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -244,44 +255,48 @@ export default function ServicesPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Keynote Speaking</div>
-                      <div className="text-sm text-muted-foreground">
-                        Expert speakers for conferences and educational events
+                      <div className="font-medium">Academic & Research Printing (Thesis, Dissertations, Reports)</div>
                       </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Training Manuals & Workbooks</div>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Workshop Facilitation</div>
-                      <div className="text-sm text-muted-foreground">Interactive workshops and training sessions</div>
+                      <div className="font-medium">Certificates & ID Cards</div>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Educational Materials</div>
-                      <div className="text-sm text-muted-foreground">
-                        Custom textbooks, manuals, and learning resources
+                      <div className="font-medium">Flyers, Posters, & Banners
                       </div>
+                      
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Corporate Printing</div>
-                      <div className="text-sm text-muted-foreground">
-                        Professional printing services for all business needs
-                      </div>
+                      <div className="font-medium">eBook & Digital Publishing</div>
+                      
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">
+                        Educational Materials Publishing
+                      </div>                
                     </div>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <Link href="/contact">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                
               </CardContent>
             </Card>
           </div>

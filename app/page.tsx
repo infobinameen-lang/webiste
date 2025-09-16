@@ -278,8 +278,8 @@ export default function HomePage() {
                     <UsersIcon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-semibold">Mrs. Adebayo</div>
-                    <div className="text-sm text-muted-foreground">School Principal, Lagos</div>
+                    <div className="font-semibold">Mrs. Adebayo John</div>
+                    <div className="text-sm text-muted-foreground">School Principal, Kaduna</div>
                   </div>
                 </div>
               </CardContent>
@@ -301,8 +301,8 @@ export default function HomePage() {
                     <TrendingUpIcon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <div className="font-semibold">Mr. Okafor</div>
-                    <div className="text-sm text-muted-foreground">CEO, Tech Solutions Ltd</div>
+                    <div className="font-semibold">Mr. Khalid Abdullahi</div>
+                    <div className="text-sm text-muted-foreground">CEO, Alyaum Tech Solutions Ltd</div>
                   </div>
                 </div>
               </CardContent>
@@ -324,7 +324,7 @@ export default function HomePage() {
                     <BookOpenIcon />
                   </div>
                   <div>
-                    <div className="font-semibold">Dr. Emeka</div>
+                    <div className="font-semibold">Sa'adtu Ahmed</div>
                     <div className="text-sm text-muted-foreground">University Researcher</div>
                   </div>
                 </div>
