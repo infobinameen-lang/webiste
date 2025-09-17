@@ -1,6 +1,4 @@
 {
-  "/services/page": "app/services/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
   "/programmes/page": "app/programmes/page.js",
   "/partners/page": "app/partners/page.js",
   "/contact/page": "app/contact/page.js",

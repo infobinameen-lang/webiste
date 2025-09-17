@@ -61,37 +61,49 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Partnership Statistics */}
-      <section className="py-20" data-aos="fade-up">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
-              </div>
-              <div className="text-2xl font-semibold text-primary mb-2">TEACHERS REGISTRATION COUNCIL OF NIGERIA</div>
-            </div>
-            <div>
-              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
-              </div>
-              <div className="text-2xl font-semibold text-primary mb-2">AL-BIRR MULTIMEDIA</div>
-            </div>
-            <div>
-              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mm.jpg" alt="States Covered" className="w-full h-full object-contain" />
-              </div>
-              <div className="text-2xl font-semibold text-primary mb-2">HAMUNA COURIER AND LOGISTIC SERVICES</div>
-            </div>
-            <div>
-              <div className="w-32 h-32 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/kano.jpg" alt="Years Partnership" className="w-full h-full object-contain" />
-              </div>
-              <div className="text-2xl font-semibold text-primary mb-2">KANO STATE MINISTRY OF EDUCATION</div>
-            </div>
-          </div>
+{/* Partnership Statistics */}
+<section className="py-20" data-aos="fade-up">
+  <div className="container mx-auto px-4">
+    <div className="overflow-hidden">
+      <div className="flex items-center gap-8 animate-marquee">
+        <div className="w-32 h-32 flex-shrink-0">
+          <img src="/trcn.png" alt="TRCN" className="w-full h-full object-contain" />
         </div>
-      </section>
+        <div className="w-32 h-32 flex-shrink-0">
+          <img src="/birr.jpg" alt="AL-BIRR MULTIMEDIA" className="w-full h-full object-contain" />
+        </div>
+        <div className="w-32 h-32 flex-shrink-0">
+          <img src="/mm.jpg" alt="HAMUNA COURIER AND LOGISTIC SERVICES" className="w-full h-full object-contain" />
+        </div>
+        <div className="w-32 h-32 flex-shrink-0">
+          <img src="/partt.png" alt="HAMUNA COURIER AND LOGISTIC SERVICES" className="w-full h-full object-contain" />
+        </div>
+        <div className="w-32 h-32 flex-shrink-0">
+          <img src="/part.jpg" alt="HAMUNA COURIER AND LOGISTIC SERVICES" className="w-full h-full object-contain" />
+        </div>
+        <div className="w-32 h-32 flex-shrink-0">
+          <img src="/kano.jpg" alt="KANO STATE MINISTRY OF EDUCATION" className="w-full h-full object-contain" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style jsx>{`
+  .animate-marquee {
+    display: flex;
+    animation: marquee 10s ease-in-out infinite alternate;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0); /* Start at the right edge of the container */
+    }
+    to {
+      transform: translateX(calc(-100% + 100vw)); /* Move to the left edge of the container */
+    }
+  }
+`}</style>
 
       {/* Partnership Benefits */}
       <section className="py-20" data-aos="fade-up">
