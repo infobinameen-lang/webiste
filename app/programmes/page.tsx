@@ -139,10 +139,7 @@ export default function ProgrammesPage() {
                 />
                 <CardTitle>Ethication – Teacher Training Programme</CardTitle>
                 <CardDescription>
-                  Ethication is Bin-Ameen Consulting’s flagship teacher training programme designed to raise the
-                  standard of teaching in Nigeria. The programme equips educators with ethical competence, modern
-                  teaching strategies, classroom management skills, and digital literacy to meet today’s learning
-                  demands.
+                  A teacher development programme focused on innovative pedagogy, professional ethics, and effective classroom practice.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -162,9 +159,7 @@ export default function ProgrammesPage() {
                 />
                 <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
                 <CardDescription>
-                  Think Twice – College of Entrepreneurship is designed for both secondary school leavers and
-                  university graduates. For secondary school leavers, the programme stresses that while a college
-                  degree is valuable, it is not the only path to success.
+                  An entrepreneurship programme that equips individuals with practical business thinking, strategy, and innovation skills
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -184,9 +179,7 @@ export default function ProgrammesPage() {
                 />
                 <CardTitle>Stand & Speak – Own the Stage</CardTitle>
                 <CardDescription>
-                  Stand & Speak – Own the Stage trains young professionals to overcome the fear of public speaking and
-                  build confidence on stage. The programme equips participants with proven strategies to manage stage
-                  anxiety, develop fluency, and deliver engaging presentations. Hold that Mic & Say your Piece!
+                  A public speaking programme designed to build confidence, clarity, and impactful communication.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -206,9 +199,7 @@ export default function ProgrammesPage() {
                 />
                 <CardTitle>Research Lab – From Proposal to Publication</CardTitle>
                 <CardDescription>
-                  Research Lab is designed to instill strong research skills in young researchers, university graduates,
-                  and anyone interested in academic inquiry. The programme covers the full research journey, from
-                  proposal writing to journal publication.
+                  A research support programme providing guidance in research design, data analysis, and academic writing.
                 </CardDescription>
               </CardHeader>
               <CardContent>

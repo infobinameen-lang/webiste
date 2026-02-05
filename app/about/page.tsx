@@ -151,8 +151,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">
-                  To empower educational institutions and businesses with innovative consulting solutions that drive
-                  sustainable growth, enhance performance, and create lasting positive impact in Nigerian communities.
+                  To disrupt conventional education and consulting practices by delivering ethical, expertise-driven, and innovative solutions that create measurable impact.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -166,8 +165,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">
-                  To be Nigeria's leading consulting firm, recognized for transforming educational practices and
-                  business operations through evidence-based solutions and professional excellence.
+                  To redefine education and technology consulting by setting new standards of innovation, excellence, and integrity.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -181,7 +179,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">
-                  Excellence, Integrity, Innovation, and Impact. We believe in delivering exceptional results while
+                  Expertise, Innovation, and Ethics. We believe in delivering exceptional results while
                   maintaining the highest ethical standards and fostering continuous improvement.
                 </CardDescription>
               </CardContent>

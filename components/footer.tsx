@@ -134,11 +134,12 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li className="text-primary-foreground/80">Teacher Training</li>
-              <li className="text-primary-foreground/80">Educational Research</li>
-              <li className="text-primary-foreground/80">Business Consulting</li>
+              <li className="text-primary-foreground/80">Training</li>
+              <li className="text-primary-foreground/80">EduTech</li>
+              <li className="text-primary-foreground/80">ICT</li>
+              <li className="text-primary-foreground/80">Research</li>
               <li className="text-primary-foreground/80">Public Speaking</li>
-              <li className="text-primary-foreground/80">Printing Services</li>
+              <li className="text-primary-foreground/80">Printing & Publishing</li>
             </ul>
           </div>
 
@@ -157,7 +158,7 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <MapPinIcon />
                 <span className="text-primary-foreground/80">
-                  Building 5 New Site, Yusuf Maitama Sule Federal University of Education, Kano
+                  Building 5, YMS Federal University of Education (Formerly FCE Kano), Annex Campus, Kano
                 </span>
               </div>
             </div>
@@ -182,7 +183,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © 2024 BIN-AMEEN CONSULTING. All rights reserved. | Privacy Policy | Terms of Service
+            © 2026 BIN-AMEEN CONSULTING. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>
