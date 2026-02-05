@@ -65,8 +65,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            
-                        {/* Training Services */}
+            {/* Training Services */}
             <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
               <CardHeader>
                 <div className="bg-amber-100 dark:bg-amber-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-amber-200 dark:group-hover:bg-amber-800/50 transition-colors">
@@ -137,8 +136,70 @@ export default function ServicesPage() {
               </CardContent>
             </Card>
 
-            {/* ICT Services */}
+            {/* EduTech Services */}
             <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+              <CardHeader>
+                <div className="bg-cyan-100 dark:bg-cyan-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-cyan-200 dark:group-hover:bg-cyan-800/50 transition-colors">
+                  <TrendingUp className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
+                </div>
+                <CardTitle className="text-2xl">EduTech Solutions</CardTitle>
+                <CardDescription className="text-base">
+                  Technology integration for modern educational excellence and institutional growth.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Technology Integration for Teaching and Learning</div>
+                      <div className="text-sm text-muted-foreground">
+                        Implementing digital tools and platforms to enhance educational delivery.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Digital Classroom Setup & Support</div>
+                      <div className="text-sm text-muted-foreground">
+                        Designing and setting up technology-enabled learning environments.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Learning Management System (LMS) Advisory</div>
+                      <div className="text-sm text-muted-foreground">
+                        Expert guidance on selecting and implementing effective LMS solutions.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Educational Technology Training</div>
+                      <div className="text-sm text-muted-foreground">
+                        Upskilling teachers and schools in effective EdTech utilization.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">EduTech Consulting for Institutions</div>
+                      <div className="text-sm text-muted-foreground">
+                        Strategic consulting to optimize technology adoption and implementation.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* ICT Services */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
               <CardHeader>
                 <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800/50 transition-colors">
                   <BarChart3 className="h-8 w-8 text-blue-600 dark:text-blue-400" />
@@ -199,8 +260,70 @@ export default function ServicesPage() {
               </CardContent>
             </Card>
 
+            {/* Research Services */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+              <CardHeader>
+                <div className="bg-indigo-100 dark:bg-indigo-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-indigo-200 dark:group-hover:bg-indigo-800/50 transition-colors">
+                  <BookOpen className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+                </div>
+                <CardTitle className="text-2xl">Research Consulting</CardTitle>
+                <CardDescription className="text-base">
+                  Comprehensive support for academic and educational research excellence.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Academic and Educational Research Consulting</div>
+                      <div className="text-sm text-muted-foreground">
+                        Expert guidance on research methodology and educational best practices.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Proposal Writing & Research Design Support</div>
+                      <div className="text-sm text-muted-foreground">
+                        Crafting compelling research proposals and solid research designs.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Data Collection & Analysis</div>
+                      <div className="text-sm text-muted-foreground">
+                        Expert guidance on qualitative and quantitative data methods.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Thesis, Dissertation & Project Guidance</div>
+                      <div className="text-sm text-muted-foreground">
+                        Supporting students and scholars through major research projects.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Monitoring & Evaluation (M&E) Support</div>
+                      <div className="text-sm text-muted-foreground">
+                        Designing and implementing effective monitoring and evaluation frameworks.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Public Speaking Services */}
-            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
               <CardHeader>
                 <div className="bg-purple-100 dark:bg-purple-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800/50 transition-colors">
                   <Mic className="h-8 w-8 text-purple-600 dark:text-purple-400" />
@@ -253,7 +376,7 @@ export default function ServicesPage() {
             </Card>
 
             {/* Printing & Publishing Services */}
-            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="700">
               <CardHeader>
                 <div className="bg-green-100 dark:bg-green-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 dark:group-hover:bg-green-800/50 transition-colors">
                   <BookOpen className="h-8 w-8 text-green-600 dark:text-green-400" />

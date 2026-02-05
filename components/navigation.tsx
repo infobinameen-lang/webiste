@@ -86,7 +86,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/logo.png"
-              alt="BIN-AMEEN CONSULTING"
+              alt="BIN-AMEEN CONSULTING LTD"
               width={60}
               height={60}
               className="object-contain"
