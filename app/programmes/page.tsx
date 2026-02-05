@@ -135,7 +135,7 @@ export default function ProgrammesPage() {
                 <img
                   src="/4.png"
                   alt="Ethication Logo"
-                  className="w-16 h-16 mx-auto mb-4"
+                  className="w-24 h-24 mx-auto mb-4"
                 />
                 <CardTitle>Ethication – Teacher Training Programme</CardTitle>
                 <CardDescription>
@@ -155,7 +155,7 @@ export default function ProgrammesPage() {
                 <img
                   src="/2.png"
                   alt="Think Twice Logo"
-                  className="w-16 h-16 mx-auto mb-4"
+                  className="w-24 h-24 mx-auto mb-4"
                 />
                 <CardTitle>Think Twice – College of Entrepreneurship</CardTitle>
                 <CardDescription>
@@ -175,7 +175,7 @@ export default function ProgrammesPage() {
                 <img
                   src="/1.png"
                   alt="Stand & Speak Logo"
-                  className="w-16 h-16 mx-auto mb-4"
+                  className="w-24 h-24 mx-auto mb-4"
                 />
                 <CardTitle>Stand & Speak – Own the Stage</CardTitle>
                 <CardDescription>
@@ -191,11 +191,11 @@ export default function ProgrammesPage() {
 
             {/* Research Lab Programme */}
             <Card className="hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
-              <CardHeader>
+              <CardHeader className="text-center">
                 <img
                   src="/3.png"
                   alt="Research Lab Logo"
-                  className="w-16 h-16 mx-auto mb-4"
+                  className="w-24 h-14 mx-auto mb-4"
                 />
                 <CardTitle>Research Lab – From Proposal to Publication</CardTitle>
                 <CardDescription>
