@@ -85,10 +85,10 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/bin-ameen-logo.png"
+              src="/logo.png"
               alt="BIN-AMEEN CONSULTING"
-              width={40}
-              height={40}
+              width={60}
+              height={60}
               className="object-contain"
             />
             <div className="hidden sm:block">

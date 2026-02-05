@@ -68,10 +68,10 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <Image
-                src="/bin-ameen-logo.png"
+                src="/logo.png"
                 alt="BIN-AMEEN CONSULTING"
-                width={32}
-                height={32}
+                width={42}
+                height={42}
                 className="object-contain"
               />
               <div className="bg-primary-foreground text-primary px-3 py-2 rounded-md font-bold text-lg">BIN-AMEEN</div>

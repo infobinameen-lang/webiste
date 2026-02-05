@@ -1,4 +1,4 @@
-// File: D:\Binaminsite\webiste\app\layout.tsx
+// File: D:\Project Websites\Binamin\webiste\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

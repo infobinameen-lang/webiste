@@ -65,15 +65,16 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Education Consulting */}
-            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+            
+                        {/* Training Services */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
               <CardHeader>
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <GraduationCap className="h-8 w-8 text-primary" />
+                <div className="bg-amber-100 dark:bg-amber-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-amber-200 dark:group-hover:bg-amber-800/50 transition-colors">
+                  <Award className="h-8 w-8 text-amber-600 dark:text-amber-400" />
                 </div>
-                <CardTitle className="text-2xl">Educational Consulting</CardTitle>
+                <CardTitle className="text-2xl">Training & Professional Development</CardTitle>
                 <CardDescription className="text-base">
-                  Helping schools, NGOs, and education agencies improve systems and outcomes.
+                  Empowering individuals and organizations through comprehensive training programs.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -81,45 +82,54 @@ export default function ServicesPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Teacher Recruitment</div>
+                      <div className="font-medium">Teacher Professional Development</div>
                       <div className="text-sm text-muted-foreground">
-                        Sourcing, screening, and onboarding top teaching talent.
+                        Upskilling and continuous learning programs for educators.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Certificate Translation</div>
+                      <div className="font-medium">Business & Entrepreneurship Training</div>
                       <div className="text-sm text-muted-foreground">
-                        Professional translation and verification for international use.
+                        Building business acumen and entrepreneurial skills.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Educational Technology Integration</div>
+                      <div className="font-medium">Leadership & Management Training</div>
                       <div className="text-sm text-muted-foreground">
-                        Helping schools adopt and implement smart boards, LMS, and other EdTech solutions.
+                        Developing effective leaders and managers across all levels.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Educational Analysis</div>
+                      <div className="font-medium">Digital & ICT Skills Training</div>
                       <div className="text-sm text-muted-foreground">
-                        School needs assessments, curriculum evaluation, and data-driven recommendations.
+                        Equipping teams with essential digital competencies.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">International Admission Processing</div>
+                      <div className="font-medium">Mass Education & Community Sensitization Programs</div>
                       <div className="text-sm text-muted-foreground">
-                        Guiding students through applications, documentation, and visa preparation.
+                        Raising awareness and engagement across communities.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">School-Based Workshops & Seminars</div>
+                      <div className="text-sm text-muted-foreground">
+                        Targeted learning sessions tailored to school needs.
                       </div>
                     </div>
                   </div>
@@ -127,15 +137,15 @@ export default function ServicesPage() {
               </CardContent>
             </Card>
 
-            {/* Add AOS to Other Cards */}
-            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+            {/* ICT Services */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
               <CardHeader>
-                <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <BookOpen className="h-8 w-8 text-secondary" />
+                <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800/50 transition-colors">
+                  <BarChart3 className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
-                <CardTitle className="text-2xl">Research Consulting Services</CardTitle>
+                <CardTitle className="text-2xl">ICT & Digital Solutions</CardTitle>
                 <CardDescription className="text-base">
-                  Supporting impactful research from proposal development to publication.
+                  Comprehensive information and communication technology services for organizations.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -143,18 +153,151 @@ export default function ServicesPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Research Proposal Development Support</div>
+                      <div className="font-medium">Computer Training Programs</div>
                       <div className="text-sm text-muted-foreground">
-                        Assistance in creating compelling research proposals.
+                        Comprehensive computer skills and hardware training.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Data Collection & Analysis</div>
+                      <div className="font-medium">Office Productivity Software Training</div>
                       <div className="text-sm text-muted-foreground">
-                        Expert guidance on qualitative and quantitative methods.
+                        Mastering Word, Excel, PowerPoint, and other essential tools.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">IT Support for Schools and SMEs</div>
+                      <div className="text-sm text-muted-foreground">
+                        Reliable technical support and system maintenance.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Basic Networking & Systems Setup</div>
+                      <div className="text-sm text-muted-foreground">
+                        Setting up and configuring network infrastructure.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Digital Literacy Programs</div>
+                      <div className="text-sm text-muted-foreground">
+                        Building foundational digital skills for all ages.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Public Speaking Services */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+              <CardHeader>
+                <div className="bg-purple-100 dark:bg-purple-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800/50 transition-colors">
+                  <Mic className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                </div>
+                <CardTitle className="text-2xl">Public Speaking & Communication</CardTitle>
+                <CardDescription className="text-base">
+                  Crafting compelling speakers and facilitating impactful communications.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Master of Ceremonies (Academic & Corporate Events)</div>
+                      <div className="text-sm text-muted-foreground">
+                        Professional event hosting and facilitation services.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Public Speaking & Presentation Skills Coaching</div>
+                      <div className="text-sm text-muted-foreground">
+                        Coaching individuals to deliver impactful presentations.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Event Facilitation & Moderation</div>
+                      <div className="text-sm text-muted-foreground">
+                        Managing discussions and workshops with expertise and engagement.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Communication & Confidence-Building Training</div>
+                      <div className="text-sm text-muted-foreground">
+                        Developing effective communicators with enhanced confidence.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Printing & Publishing Services */}
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+              <CardHeader>
+                <div className="bg-green-100 dark:bg-green-900/30 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 dark:group-hover:bg-green-800/50 transition-colors">
+                  <BookOpen className="h-8 w-8 text-green-600 dark:text-green-400" />
+                </div>
+                <CardTitle className="text-2xl">Printing & Publishing</CardTitle>
+                <CardDescription className="text-base">
+                  Professional printing and publishing solutions for educational and corporate needs.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Academic & Corporate Printing & Binding</div>
+                      <div className="text-sm text-muted-foreground">
+                        High-quality printing services with professional binding options.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Certificate & Document Printing</div>
+                      <div className="text-sm text-muted-foreground">
+                        Printing official certificates and important documents.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Book, Journal & Educational Material Publishing</div>
+                      <div className="text-sm text-muted-foreground">
+                        End-to-end publishing services for educational content.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Design & Layout of Educational and Corporate Documents</div>
+                      <div className="text-sm text-muted-foreground">
+                        Professional design services for visually compelling materials.
                       </div>
                     </div>
                   </div>
