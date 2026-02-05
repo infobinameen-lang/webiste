@@ -92,8 +92,8 @@ export function Navigation() {
               className="object-contain"
             />
             <div className="hidden sm:block">
-              <div className="font-bold text-lg text-foreground">BIN-AMEEN CONSULTING</div>
-              <div className="text-xs text-muted-foreground">Education • Research • Business</div>
+              <div className="font-bold text-lg text-foreground">BIN-AMEEN CONSULTING LTD</div>
+              <div className="text-xs text-muted-foreground">Education • Research • Business • Expertise & Innovation</div>
             </div>
           </Link>
 

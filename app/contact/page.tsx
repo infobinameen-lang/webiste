@@ -216,9 +216,27 @@ export default function ContactPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  {/* Office details omitted for brevity */}
+                  <div>
+                    <h3 className="font-semibold mb-2">Kano Office (Headquarters)</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Building 5, YMS Federal University of Education (Formerly FCE Kano), Annex Campus, Kano
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
+
+              {/* Google Map */}
+              <div className="rounded-lg overflow-hidden shadow-lg h-96">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.0932829288535!2d8.508!3d12.0032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae2b5c4c4c4c4d%3A0x4c4c4c4c4c4c4c4c!2sYusuf%20Maitama%20Sule%20Federal%20University%20of%20Education!5e0!3m2!1sen!2sng!4v1675000000000"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
           </div>
         </div>
